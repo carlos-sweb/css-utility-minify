@@ -13,6 +13,7 @@ git clone https://github.com/carlos-sweb/css-utility-minify.git
 ## compile
 
 ```console
+cmake .
 make
 ```
 
