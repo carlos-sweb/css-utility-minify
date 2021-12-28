@@ -1,1 +1,0 @@
-/usr/bin/cc CMakeFiles/css-utility-minify.dir/css-utility-minify.c.o -o css-utility-minify 

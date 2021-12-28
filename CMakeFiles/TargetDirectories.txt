@@ -1,3 +1,0 @@
-/home/carlos-sweb/Escritorio/css-utility-minify/CMakeFiles/rebuild_cache.dir
-/home/carlos-sweb/Escritorio/css-utility-minify/CMakeFiles/css-utility-minify.dir
-/home/carlos-sweb/Escritorio/css-utility-minify/CMakeFiles/edit_cache.dir
