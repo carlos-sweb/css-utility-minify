@@ -15,29 +15,25 @@ char *choppy( char *s )
     return n;
 }
 
+int main( int argc ,char *argv[]  ) {
 
-int main(int argc , char *argv[] )
-{
     if( argc  < 3 ){
       printf("%s\n","We need two argument :( ");
       exit(0);
     }
 
-
     FILE * file;
     file =  fopen( argv[1] ,"r");
     if( file == NULL ){
       printf("%s : ",argv[1]);
-      printf("%s\n","File no exists");      
+      printf("%s\n","File no exists");
       exit(0);
-   }
+    }
 
     if( file != NULL ){
 
-
         FILE * fptr;
         fptr = fopen(argv[2], "w+"); // "w" defines "writing mode"
-
         char * line = NULL;
         size_t len = 0;
         ssize_t read;
