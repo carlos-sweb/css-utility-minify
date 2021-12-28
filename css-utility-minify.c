@@ -16,33 +16,38 @@ char *choppy( char *s )
 }
 
 
-int main()
+int main(int argc , char *argv[] )
 {
+    if( argc  < 3 ){
+      printf("%s\n","We need two argument :( ");
+      exit(0);
+    }
 
-    char nameFile[] = "prueba.min.css";
-    FILE * fptr;
-    fptr = fopen(nameFile, "w+"); // "w" defines "writing mode"        
 
     FILE * file;
-    file =  fopen("/home/carlos-sweb/Escritorio/css/pp-drawer/dist/alignment/align-content.css","r");
+    file =  fopen( argv[1] ,"r");
+    if( file == NULL ){
+      printf("%s : ",argv[1]);
+      printf("%s\n","File no exists");      
+      exit(0);
+   }
 
     if( file != NULL ){
+
+
+        FILE * fptr;
+        fptr = fopen(argv[2], "w+"); // "w" defines "writing mode"
 
         char * line = NULL;
         size_t len = 0;
         ssize_t read;
 
-        while ((read = getline(&line, &len, file)) != -1){            
+        while ((read = getline(&line, &len, file)) != -1){
             fputs( trim( choppy( line ) ) ,fptr);
         }
-
-    }else{
-         printf("File not exists\n");
+        fclose(file);
+        fclose(fptr);
     }
-
-    fclose(file);
-    fclose(fptr);
-    
 
     return (0);
 }
@@ -55,7 +60,7 @@ char * trim(char * buff)
     while(1==1)
     {
         if((*buff == ' ') || (*buff == '\t') || (*buff == '\r') || (*buff == '\n'))
-            { 
+            {
                 x++;
                 ++buff;
             }
@@ -68,7 +73,7 @@ char * trim(char * buff)
     while(1==1)
     {
         if(buff[y] == ' ' || (buff[y] == '\t') || (buff[y] == '\r') || (buff[y] == '\n'))
-            { 
+            {
                 y--;
             }
         else
