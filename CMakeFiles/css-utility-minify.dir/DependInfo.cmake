@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/carlos-sweb/Escritorio/c/css-utility-minify.c" "/home/carlos-sweb/Escritorio/c/CMakeFiles/css-utility-minify.dir/css-utility-minify.c.o"
+  "/home/carlos-sweb/Escritorio/css-utility-minify/css-utility-minify.c" "/home/carlos-sweb/Escritorio/css-utility-minify/CMakeFiles/css-utility-minify.dir/css-utility-minify.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

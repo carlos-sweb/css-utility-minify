@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/carlos-sweb/Escritorio/c/css-utility-minify.c
+/home/carlos-sweb/Escritorio/css-utility-minify/css-utility-minify.c
 stdio.h
 -
 string.h
